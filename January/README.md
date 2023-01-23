@@ -50,7 +50,7 @@
 
 - 인스타그램을 만들 때 물론 기존 MVVM 패턴에서 tabController과 Navigation을 이용했습니다. 앞서 말한 두 object들은 ContainerViewController이기 때문에 각각은 Stack구조로 sub viewController들을 저장하고, push, pop을 통해 LIFO구조로 subController들을 계층적으로 관리한다는 개념을 알고 있었습니다. 그럼에도 뭔가 찝찝했기에 인터넷을 통해 화면 관리 관련 패턴을 찾았습니다.( 결국 화면 관리는 container controller에서 하게 된다는 임시적으로 결론지었습니다. 컨테이너 컨트롤러 다시 공부해야겠어요 ㅠ)
 
-- 지금까지 찾아본 패턴은 Router를 이용한 Vipor patttern, Coordinator pattern이 있다는 점을 알게 되었습니다. <a href="https://khanlou.com/2015/10/coordinators-redux/">KHANLOU</a>의 Coordinator Redux.. MVC, MVVM, MVP 등 다양하게 적용이 가능한 이유는 Coordinator는 vipor를 제외한? 이전 Architecture pattern에서는 다루지 않았던 화면 전환의 역할을 새롭게 담당하는 Pattern이기 때문입니다. Khanlou가 소개한 초기 Coordinator는 앱 델리게이트는 Entry point인 app delegate에서 opening system에서 app의 subsystem으로 메시지를 실어 나르는 책임이 있는데 변경하기 정말 쉽고 이를 이용해 Container의 rootViewController를 app delegate에 넣지만 이마저도  app delegate에 책임을 떠넘기는 것이기 때문에 massive해지게 됩니다. 
+- 지금까지 찾아본 패턴은 Router를 이용한 Vipor patttern, Coordinator pattern이 있다는 점을 알게 되었습니다. <a href="https://khanlou.com/2015/10/coordinators-redux/">KHANLOU</a>의 Coordinator Redux.. MVC, MVVM, MVP 등 다양하게 적용이 가능한 이유는 Coordinator는 (vipor를 제외한?) 이전에 언급한 Architecture pattern에서는 다루지 않았던 화면 전환의 역할을 새롭게 담당하는 Pattern이기 때문입니다. Khanlou가 소개한 초기 Coordinator는 앱 델리게이트는 Entry point인 app delegate에서 opening system에서 app의 subsystem으로 메시지를 실어 나르는 책임이 있는데 변경하기 정말 쉽고 이를 이용해 Container의 rootViewController를 app delegate에 넣지만 이마저도  app delegate에 책임을 떠넘기는 것이기 때문에 massive해지게 됩니다. 
 
 - massive한 상태를 없애기 위해 소개된 것이 ViewController를 관리하는 Coordinator 패턴입니다. 이는 ApplicationCoordinator를 app delegate에 생성함으로써 App delegate에 massive한 code를 넣지 않도록 해결할 수 있습니다. App delegate는 간단하게 ApplicationCoordinator를 start하기만 하면 됩니다. 그리고 ApplicationCoordinator로부터 주요한 viewController의 관리를 setup하면 됩니다.
 
