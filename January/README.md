@@ -48,7 +48,7 @@
 
 - 인스타그램 개발을 하면서 다음화면으로 넘어가고를 반복하면 화면이 계속 쌓이는데 이를 어떻게 관리할 것인지 정말 궁금했습니다. MVVM에 Clean architecture 패턴을 적용한 개념도 알게 되었습니다. Layer간 의존성 주입과 역전을 중심으로 각 layer간 의존성이 없는 설계를 구현한다는 개념을 알게 되었습니다. MVVM Clean architecture는 CleanCode 책을 만든 Robert C.Martin이 제안한 system architecture pattern인데(대단,,) 다시 한번 읽으면서 정리해야겠다고 느겼습니다. 하지만 Clean architecture의 도입은 화면 전환에 대한 제 궁금증을 해결하진 못했습니다....
 
-- 인스타그램을 만들 때 물론 기존 MVVM 패턴에서 tabController과 Navigation을 이용했습니다. 앞서 말한 두 object들은 ContainerViewController이기 때문에 각각은 Stack구조로 sub viewController들을 저장하고, push, pop을 통해 LIFO구조로 subController들을 계층적으로 관리한다는 개념을 알고 있었습니다. 그럼에도 뭔가 찝찝했기에 인터넷을 통해 화면 관리 관련 패턴을 찾았습니다.
+- 인스타그램을 만들 때 물론 기존 MVVM 패턴에서 tabController과 Navigation을 이용했습니다. 앞서 말한 두 object들은 ContainerViewController이기 때문에 각각은 Stack구조로 sub viewController들을 저장하고, push, pop을 통해 LIFO구조로 subController들을 계층적으로 관리한다는 개념을 알고 있었습니다. 그럼에도 뭔가 찝찝했기에 인터넷을 통해 화면 관리 관련 패턴을 찾았습니다.( 결국 화면 관리는 container controller에서 하게 된다는 것을 알게 되었습니다.)
 
 - 지금까지 찾아본 패턴은 Router를 이용한 Vipor patttern, Coordinator pattern이 있다는 점을 알게 되었습니다. <a href="https://khanlou.com/2015/10/coordinators-redux/">KHANLOU</a>의 Coordinator Redux.. MVC, MVVM, MVP 등 다양하게 적용이 가능한 이유는 Coordinator는 vipor를 제외한? 이전 Architecture pattern에서는 다루지 않았던 화면 전환의 역할을 새롭게 담당하는 Pattern이기 때문입니다. Khanlou가 소개한 초기 Coordinator는 앱 델리게이트는 Entry point인 app delegate에서 opening system에서 app의 subsystem으로 메시지를 실어 나르는 책임이 있는데 변경하기 정말 쉽고 이를 이용해 Container의 rootViewController를 app delegate에 넣지만 이마저도  app delegate에 책임을 떠넘기는 것이기 때문에 massive해지게 됩니다. 
 
