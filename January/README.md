@@ -40,6 +40,11 @@
 - Coordinator pattern.
 
 - 문자열 알고리즘
+ 
+- 인스타 그램 개발할 때 반복되는 변수를 너무 많이 써서 편리하게 $0으로 사용할 수있게 커스텀 함수를 몇개 만들었습니다. ㅎㅎ
+ 
+- - snapkit은 아니지만.. 예전보단 편한 <a href="https://github.com/SHcommit/LearnMoreSwiftInUdemy/blob/master/Clone%20App/Instagram/Instagram/Features/Shared/Protocols/UIView%2BViewLayoutProtocols.swift">레이아웃 설정 관련</a>
+- - coordinator <a href="https://github.com/SHcommit/LearnMoreSwiftInUdemy/blob/master/Clone%20App/Instagram/Instagram/Features/FlowCoordinators/FlowCoordinator%2BUtils.swift">객체 편의 초기화</a> 함수
 
 - 인스타그램 개발을 하면서 다음화면으로 넘어가고를 반복하면 화면이 계속 쌓이는데 이를 어떻게 관리할 것인지 정말 궁금했습니다. MVVM에 Clean architecture 패턴을 적용한 개념도 알게 되었습니다. Layer간 의존성 주입과 역전을 중심으로 의존성에서 벗어나는 설계를 구현한다는 개념을 알게 되었습니다. MVVM Clean architecture는 CleanCode 책을 만든 Robert C.Martin이 제안한 system architecture pattern인데(대단,,) 다시 한번 읽으면서 정리해야겠다고 느겼습니다. 하지만 Clean architecture의 도입은 화면 전환에 대한 제 궁금증을 해결하진 못했습니다....
 
