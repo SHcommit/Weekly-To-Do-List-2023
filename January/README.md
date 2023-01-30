@@ -76,7 +76,15 @@
 
 ## 4주(23~29)
 
+<img src="https://user-images.githubusercontent.com/96910404/215457456-3cd12fec-4314-44c9-a687-e94460c11b62.jpeg"  width="400" /> 
+
+
 ### 공부한 것
+
+kmp 알고리즘
+문자열 관련 알고리즘
+GCD
 
 ### 아쉬운 점 
  
+ 너무 한가지만 하려고 한다. 분산처리 공부 해보자!! multi core처럼 !!!
