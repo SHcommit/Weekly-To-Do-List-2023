@@ -14,15 +14,12 @@
 
 ## 2주(6~12)
 
-<img src=""  width="400" /> 
+<img src="https://user-images.githubusercontent.com/96910404/219396222-36b4e705-9321-4b5d-b829-e9aa2c24b33e.jpeg"  width="400" /> 
 
 ### 공부한 것
 
-- 
+- image caching과 ModernConcurrency를 조금 공부했다. 영어 능력을 좀 더 빨리 키워서 외국 문서를 많이 봐야겠따. 알고리즘이 중요한데 개념을 알고 있는데 문제에 적용하는게 어렵다..ㅠㅠ
 
-### 아쉬운 점 
-
--
 
 ## 3주(13~19)
 
