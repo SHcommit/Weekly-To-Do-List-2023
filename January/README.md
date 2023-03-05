@@ -1,6 +1,6 @@
 ## 1주(2~8)
 
-<img src="https://user-images.githubusercontent.com/96910404/211215304-57390069-e1f3-4ea0-ae3a-289aaad6c80e.jpeg"  width="400" /> 
+<img src="https://user-images.githubusercontent.com/96910404/222986307-2b04db71-0880-49f6-8b71-28ffff8be3b2.jpeg"  width="400" /> 
 
 ### 공부한 것
 
@@ -15,7 +15,7 @@
 
 ## 2주(9~15)
 
-<img src="https://user-images.githubusercontent.com/96910404/212602677-1a2b8cb6-b0fa-474c-88d6-366d90657a7a.jpeg"  width="400" /> 
+<img src="https://user-images.githubusercontent.com/96910404/222986330-f7aac34d-eb83-4173-993e-cccf90f8ed72.jpeg"  width="400" /> 
 
 ### 공부한 것
 
@@ -33,7 +33,7 @@
 
 ## 3주(16~22)
 
-<img src="https://user-images.githubusercontent.com/96910404/213966667-97204170-13bb-4ba6-bd6f-069989759337.jpeg"  width="400" /> 
+<img src="https://user-images.githubusercontent.com/96910404/222986343-2d36f0b2-1789-4ee9-9127-8822972f7d54.jpeg"  width="400" /> 
 
 ### 공부한 것
 
@@ -76,8 +76,7 @@
 
 ## 4주(23~29)
 
-<img src="https://user-images.githubusercontent.com/96910404/215457456-3cd12fec-4314-44c9-a687-e94460c11b62.jpeg"  width="400" /> 
-
+<img src="https://user-images.githubusercontent.com/96910404/222986379-2aae9b74-e6b6-485e-9473-29b8bbfd2ef2.jpeg"  width="400" /> 
 
 ### 공부한 것
 
